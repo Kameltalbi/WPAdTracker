@@ -57,6 +57,7 @@ add_action('plugins_loaded', 'adwptracker_load_textdomain');
 $required_files = [
     'includes/class-adwpt-activator.php',
     'includes/class-adwpt-deactivator.php',
+    'includes/class-adwpt-license.php',
     'includes/class-adwpt-admin.php',
     'includes/class-adwpt-frontend.php',
     'includes/class-adwpt-zone.php',

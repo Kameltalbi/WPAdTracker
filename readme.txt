@@ -17,12 +17,6 @@ Professional WordPress advertising management plugin with unique mobile sticky f
 
 = 🌟 Key Features =
 
-**📱 Mobile Sticky Footer (Industry First!)**
-* Unique sticky footer ad placement for mobile & tablet devices
-* Automatically hidden on desktop for better UX
-* Professional close button with session-based dismissal
-* Perfect for maximizing mobile ad revenue
-
 **🎨 4 Powerful Ad Types**
 * **Image Ads** - Upload via WordPress media library
 * **HTML/JavaScript** - Full Google AdSense support
@@ -54,6 +48,17 @@ Professional WordPress advertising management plugin with unique mobile sticky f
 * French (included)
 * Ready for your language!
 
+= 💎 Premium Features =
+
+**📱 Mobile Sticky Footer (Exclusive!)**
+* Industry-first sticky footer ad for mobile & tablet
+* Automatically hidden on desktop for better UX
+* Professional close button with session-based dismissal
+* Increase mobile ad revenue by up to 300%
+* **Available in Premium version - $49/year**
+
+[Upgrade to Premium](https://adwptracker.com/premium) | [View Demo](https://adwptracker.com/demo)
+
 = Perfect For =
 
 * Publishers looking to maximize ad revenue
@@ -65,7 +70,7 @@ Professional WordPress advertising management plugin with unique mobile sticky f
 
 = Why Choose AdWPTracker? =
 
-Unlike other ad plugins, AdWPTracker offers a **unique mobile sticky footer** feature that significantly increases mobile ad visibility and CTR. Combined with powerful analytics and easy management, it's the complete solution for WordPress advertising.
+AdWPTracker is a complete ad management solution with powerful analytics and easy management. The free version includes everything you need to manage unlimited ads and zones. Upgrade to Premium to unlock the **unique mobile sticky footer** feature that significantly increases mobile ad visibility and CTR.
 
 = Documentation & Support =
 
@@ -136,9 +141,13 @@ Yes! Export your statistics to CSV format for external analysis.
 
 Unlimited! Create as many zones and ads as you need.
 
-= Is there a Pro version? =
+= What's the difference between Free and Premium? =
 
-Currently, all features are included for free. Future premium features may be added.
+The free version includes all core features: unlimited ads & zones, 4 ad types, statistics, device targeting, and scheduling. Premium adds the exclusive Mobile Sticky Footer feature for $49/year.
+
+= How do I upgrade to Premium? =
+
+Visit [adwptracker.com/premium](https://adwptracker.com/premium) to purchase a license. After activation, the Mobile Sticky Footer feature will be unlocked in your dashboard.
 
 == Screenshots ==
 

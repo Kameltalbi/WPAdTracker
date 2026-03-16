@@ -1675,34 +1675,54 @@ if (function_exists('adwptracker_display_zone')) {<br>
                     <label><?php esc_html_e('Sticky Mode', 'adwptracker'); ?></label>
                 </th>
                 <td>
-                    <div style="background: #f9fafb; border: 2px solid #e5e7eb; border-radius: 8px; padding: 15px;">
-                        <label style="display: flex; align-items: center; cursor: pointer; padding: 10px; background: white; border-radius: 6px; border: 1px solid #e5e7eb; margin-bottom: 15px;">
-                            <input type="checkbox" name="adwpt_sticky_enabled" value="1" <?php checked($sticky_enabled, '1'); ?> style="margin: 0 10px 0 0; width: 18px; height: 18px;">
-                            <span style="font-size: 24px; margin-right: 10px;">📌</span>
-                            <span style="font-weight: 500;"><?php esc_html_e('Enable Sticky', 'adwptracker'); ?></span>
-                        </label>
-                        
-                        <label style="display: block; font-weight: 500; margin-bottom: 8px;">
-                            <?php esc_html_e('Position', 'adwptracker'); ?>:
-                        </label>
-                        <select name="adwpt_sticky_position" id="adwpt_sticky_position" style="width: 100%; padding: 8px; border-radius: 6px;">
-                            <option value="top" <?php selected($sticky_position, 'top'); ?>>⬆️ <?php esc_html_e('Top', 'adwptracker'); ?> (<?php esc_html_e('all devices', 'adwptracker'); ?>)</option>
-                            <option value="bottom" <?php selected($sticky_position, 'bottom'); ?>>⬇️ <?php esc_html_e('Bottom', 'adwptracker'); ?> (<?php esc_html_e('mobile only', 'adwptracker'); ?> ⭐)</option>
-                        </select>
-                        
-                        <div style="margin-top: 15px; padding: 15px; background: linear-gradient(135deg, #e0f2fe 0%, #e0e7ff 100%); border-left: 4px solid #3b82f6; border-radius: 6px;">
-                            <strong style="color: #1e40af;">💡 <?php esc_html_e('Mobile Sticky Footer Setup', 'adwptracker'); ?>:</strong>
-                            <ul style="margin: 8px 0 0 20px; color: #1e3a8a; font-size: 13px;">
-                                <li>✅ <?php esc_html_e('Recommended size', 'adwptracker'); ?>: <strong>320×50px</strong></li>
-                                <li>✅ <?php esc_html_e('Uncheck', 'adwptracker'); ?>: "<?php esc_html_e('Show on Desktop', 'adwptracker'); ?>"</li>
-                                <li>✅ <?php esc_html_e('Check', 'adwptracker'); ?>: "<?php esc_html_e('Show on Mobile/Tablet', 'adwptracker'); ?>"</li>
-                                <li>✅ <?php esc_html_e('Position', 'adwptracker'); ?>: "<?php esc_html_e('Bottom', 'adwptracker'); ?>"</li>
-                            </ul>
-                            <p style="margin: 10px 0 0 0; font-size: 12px; color: #1e40af;">
-                                🚀 <?php esc_html_e('Ad will automatically appear in mobile footer', 'adwptracker'); ?>!
-                            </p>
+                    <?php if (ADWPT_License::has_sticky_mobile()): ?>
+                        <!-- Premium: Sticky Mobile Available -->
+                        <div style="background: #f9fafb; border: 2px solid #e5e7eb; border-radius: 8px; padding: 15px;">
+                            <label style="display: flex; align-items: center; cursor: pointer; padding: 10px; background: white; border-radius: 6px; border: 1px solid #e5e7eb; margin-bottom: 15px;">
+                                <input type="checkbox" name="adwpt_sticky_enabled" value="1" <?php checked($sticky_enabled, '1'); ?> style="margin: 0 10px 0 0; width: 18px; height: 18px;">
+                                <span style="font-size: 24px; margin-right: 10px;">📌</span>
+                                <span style="font-weight: 500;"><?php esc_html_e('Enable Sticky', 'adwptracker'); ?></span>
+                            </label>
+                            
+                            <label style="display: block; font-weight: 500; margin-bottom: 8px;">
+                                <?php esc_html_e('Position', 'adwptracker'); ?>:
+                            </label>
+                            <select name="adwpt_sticky_position" id="adwpt_sticky_position" style="width: 100%; padding: 8px; border-radius: 6px;">
+                                <option value="top" <?php selected($sticky_position, 'top'); ?>>⬆️ <?php esc_html_e('Top', 'adwptracker'); ?> (<?php esc_html_e('all devices', 'adwptracker'); ?>)</option>
+                                <option value="bottom" <?php selected($sticky_position, 'bottom'); ?>>⬇️ <?php esc_html_e('Bottom', 'adwptracker'); ?> (<?php esc_html_e('mobile only', 'adwptracker'); ?> ⭐)</option>
+                            </select>
+                    <?php else: ?>
+                        <!-- Free Version: Show Premium Notice -->
+                        <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 20px; border-radius: 8px; position: relative; overflow: hidden;">
+                            <div style="position: absolute; top: -20px; right: -20px; font-size: 120px; opacity: 0.1;">📱</div>
+                            <div style="position: relative; z-index: 1;">
+                                <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 12px;">
+                                    <span style="font-size: 32px;">📱</span>
+                                    <h3 style="margin: 0; color: white; font-size: 18px;">
+                                        <?php esc_html_e('Mobile Sticky Footer', 'adwptracker'); ?> - Premium Feature
+                                    </h3>
+                                </div>
+                                <p style="margin: 0 0 15px 0; opacity: 0.95; line-height: 1.6;">
+                                    <?php esc_html_e('Unlock the industry-first mobile sticky footer feature! Increase your mobile ad revenue by up to 300% with this unique positioning.', 'adwptracker'); ?>
+                                </p>
+                                <ul style="margin: 0 0 20px 20px; opacity: 0.95;">
+                                    <li>✨ <?php esc_html_e('Sticky footer on mobile & tablet', 'adwptracker'); ?></li>
+                                    <li>✨ <?php esc_html_e('Professional close button', 'adwptracker'); ?></li>
+                                    <li>✨ <?php esc_html_e('Session-based dismissal', 'adwptracker'); ?></li>
+                                    <li>✨ <?php esc_html_e('Auto-hide on desktop', 'adwptracker'); ?></li>
+                                </ul>
+                                <a href="https://adwptracker.com/premium" target="_blank" 
+                                   class="button button-primary button-large" 
+                                   style="background: white; color: #667eea; border: none; font-weight: 600; box-shadow: 0 4px 6px rgba(0,0,0,0.2); text-shadow: none;">
+                                    ⭐ Upgrade to Premium - $49/year
+                                </a>
+                                <a href="https://adwptracker.com/premium#demo" target="_blank" 
+                                   style="color: white; text-decoration: underline; margin-left: 15px; font-weight: 500;">
+                                    <?php esc_html_e('View Demo', 'adwptracker'); ?> →
+                                </a>
+                            </div>
                         </div>
-                    </div>
+                    <?php endif; ?>
                 </td>
             </tr>
             
