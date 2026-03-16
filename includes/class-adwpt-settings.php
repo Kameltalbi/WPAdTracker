@@ -376,11 +376,11 @@ class ADWPT_Settings {
                                     </tr>
                                     <tr>
                                         <td><strong>Serveur</strong></td>
-                                        <td><?php echo $_SERVER['SERVER_SOFTWARE']; ?></td>
+                                        <td><?php echo esc_html($_SERVER['SERVER_SOFTWARE']); ?></td>
                                     </tr>
                                     <tr>
                                         <td><strong>Mémoire PHP</strong></td>
-                                        <td><?php echo ini_get('memory_limit'); ?></td>
+                                        <td><?php echo esc_html(ini_get('memory_limit')); ?></td>
                                     </tr>
                                 </table>
                             </div>
