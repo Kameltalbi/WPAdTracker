@@ -26,13 +26,13 @@
 **Texte à Ajouter :**
 ```
 [GAUCHE]
-📊 AdWPTracker
+📊 Ad Banner Scanner
 Advanced Ad Manager for WordPress
 
 [DROITE - Badges]
-✨ Mobile Sticky Footer
 📊 Real-time Stats
 🎯 Smart Targeting
+💰 Revenue Tracking
 ```
 
 **Éléments Visuels :**
@@ -58,10 +58,10 @@ Advanced Ad Manager for WordPress
 
 **Texte Simplifié :**
 ```
-AdWPTracker
+Ad Banner Scanner
 Advanced Ad Manager
 
-✨ Mobile Sticky  📊 Stats  🎯 Targeting
+📊 Real-time Stats  🎯 Targeting  💰 Revenue
 ```
 
 ### Télécharger :
